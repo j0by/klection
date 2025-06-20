@@ -2,6 +2,7 @@
 # Kerala Assembly Election 2021 Visualization
 
 This is a simple flask project I setup to test out vega-lite and htmx. It provides an interactive map visualization of the 2021 Kerala Assembly election results. Styling inspired by the [Mistral website](https://mistral.ai/).
+[Demo](https://klection.onrender.com/)
 
 ## Data Sources
 

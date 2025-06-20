@@ -1,6 +1,9 @@
 from flask import Flask, render_template, send_from_directory
 import os
 import pandas as pd
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -86,5 +89,8 @@ if __name__ == '__main__':
     # Create the data directory if it doesn't exist
     os.makedirs('data', exist_ok=True)
     
+    # Get port from environment variables with a default
+    port = int(os.getenv('PORT', 5000))
+    
     # Run the app
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=port)
